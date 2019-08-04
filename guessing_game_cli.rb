@@ -12,4 +12,9 @@ def run_guessing_game
   else
     puts "Sorry! The computer guessed #{rando}."
   end
+   if input == rando.to_s
+    puts "You guessed the correct number!"
+  elsif input.downcase == "exit"
+    puts "Goodbye!"
+  end
 end
